@@ -140,10 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 ul.nav__menu_list li {
     display: inline; /* Отображать как строчный элемент */
     margin-left: 20px; /* Отступ слева */
-    font-family: Montserrat-Regular,AdobeInvisFont,MyriadPro-Regular;
-}
-.nav__menu_list a:first-of-type{
-  color: #F85F07;
+    font-family: 'Montserrat', sans-serif;
 }
 .nav__menu_list li:hover{
   color: #F85F07;
@@ -155,7 +152,7 @@ ul.nav__menu_list a{
 .header__title{
   text-align: center;
   margin-top: 20%;
-  font-family: Montserrat-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Montserrat', sans-serif;
 }
 .header__title h1{
   font-size: 48px;
@@ -180,24 +177,28 @@ ul.nav__menu_list a{
 .button a{
   color: #ffffff;
 }
-
-
 .title{
   text-align: center;
   color: #555555;
 }
 .title h2{
   font-size: 20px;
-  font-family: Montserrat-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Montserrat', sans-serif;
   padding-top: 90px;
-  margin-bottom: 28px;
   color: #555555;
+}
+.title h2::after {
+  content: "";
+  display: block;
+  width: 51px;
+  height: 2px;
+  background-color: #555;
+  margin: 28px 50% 28px 48%;
 }
 .servises__title p{
   font-size: 16px;
-  font-family: RobotoSlab-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Roboto Slab', serif;
  }
-
 .servises__block{
   color: #555555;
   display: inline-flexbox;
@@ -206,41 +207,37 @@ display: inline-flex;
 justify-content:space-around;
 margin-top: 50px;
 }
-.servises__block_font{
+.servises__block_{
   display: flexbox;
   width: 25%;
 }
-.servises__block_font h2{
+.servises__block_ h2{
   margin-bottom: 20px;
 }
-.servises__block_code h2{
+.servises__block_ img{
   margin-bottom: 20px;
-}
-.servises__block_support h2{
-  margin-bottom: 20px;
-}
-.servises__block_font img{
-  margin-bottom: 20px;
-}
-.servises__block_code img{
-  margin-bottom: 20px;
-}
-.servises__block_support img{
-  margin-bottom: 20px;
-}
-.servises__block_code{
-  display: flexbox;
-  text-align: center;
-  width: 22%;
-}
-.servises__block_support{
-  display: flexbox;
-  width: 22%;
 }
 .block__img_1 p{
   font-size: 41px;
-  color: #C0301C;
+  background-color: #C0301C;
   margin-bottom: 20px;
+  display: inline-block;
+}
+.img__servises_2 {
+   padding: 25px 18px;
+  border: 3px solid #DDD;
+  border-radius: 50%;
+}
+.img__servises_1 {
+  padding: 25px 23px;
+  border: 3px solid #DDD;
+  border-radius: 50%;
+  background-color: #C0301C;
+}
+.img__servises_3 {
+   padding: 20px 21px;
+  border: 3px solid #DDD;
+  border-radius: 50%;
 }
 .about{
   background-color: #F8F8F8;
@@ -254,7 +251,7 @@ margin-top: 50px;
 }
 .about__block_1{
   width: 40%;
-  font-family: RobotoSlab-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Roboto Slab', serif;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -280,12 +277,11 @@ margin-top: 50px;
 }
 .block_1 {
   padding: 14px;
-}
-.block__img{
-
+  position: relative;
 }
 .block__icon{
-  z-index: -1;
+  position: absolute;
+  top: 20px;
 }
 .block__bg {
   height: 250px;
@@ -300,13 +296,13 @@ margin-top: 50px;
   align-items: center;
 }
 .name__name {
-  font-family: Montserrat-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #555;
   margin: 20px 0 0 0;
 }
 .name__prof {
-  font-family: RobotoSlab-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
   color: #555;
   margin: 15px 0 0 0;
@@ -339,17 +335,17 @@ margin-top: 50px;
   font-size: 16px;
   margin-bottom: 50px;
 }
+.list li.active {
+  display: inline;
+}
 .list li{
     display: inline; /* Отображать как строчный элемент */
     margin-left: 20px; /* Отступ слева */
-    font-family: Montserrat-Regular,AdobeInvisFont,MyriadPro-Regular;
+    font-family: 'Montserrat', sans-serif;
 
 }
 .list a{
   color: #555555;
-}
-.list a:first-of-type{
-  color:#C0301C; 
 }
 .list a:hover{
   color: #C0301C;
@@ -361,6 +357,7 @@ margin-top: 50px;
   margin-bottom: 20px;
 }
 .works__block_img{
+  display: block;
   padding: 10px 5px 0px 5px;
 }
 .works{
@@ -369,7 +366,7 @@ margin-top: 50px;
 .call{
   background: url(../img/call/Rectangle\ 14@1X.png), url(../img/call/Layer\ 29@1X.png)0 0 no-repeat fixed;
   height: 370px;
-  font-family: RobotoSlab-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Roboto Slab', serif;
   color: #ffffff;
   /*background-position-y: center;*/
 }
@@ -382,12 +379,12 @@ margin-top: 50px;
 .contact_title{
   margin-bottom: 68px;
 }
-.contact__block_img img{
+.contact__block_img img{ 
   max-height: 273;
   margin: 37px;
 }
 .text__title{
-  font-family: Montserrat-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
 .contact__block{
@@ -421,23 +418,23 @@ margin-top: 50px;
 .contact__block_text h3{
   margin-top: 37px;
   color: #C0301C;
-  font-family: Montserrat-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
 .text_1{
-  font-family: RobotoSlab-Regular,RobotoSlab-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Roboto Slab', serif;
   margin-top: 19px;
   font-size: 13px;
   margin-bottom: 10px;
 }
 .text_2{
-  font-family: RobotoSlab-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Roboto Slab', serif;
   font-size: 16px;
   margin-top: 29px;
 }
 .text_3{
   margin-top: 20px;
-  font-family: RobotoSlab-Bold,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Roboto Slab', serif;
   font-size: 13px;
 }
 .clients{
@@ -460,7 +457,7 @@ margin-top: 50px;
 .clients_p p{
   text-align: center;
   margin-top: 20px;
-  font-family: RobotoSlab-Regular,RobotoSlab-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Roboto Slab', serif;
   font-size: 18px;
 }
 .footer{
@@ -475,5 +472,19 @@ margin-top: 50px;
 }
 .footer_text{
   text-align: center;
-  font-family: RobotoSlab-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-family: 'Roboto Slab', serif;
 }
+.blog-title {
+  display: flex;
+}
+.blog-title__title {
+  display: flex;
+  flex-direction: column;
+}
+.blog-title__num {
+  display: flex;
+  flex-direction: column;
+}
+.num {}
+.moth {}
+.text_1 {}

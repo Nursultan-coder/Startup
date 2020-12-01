@@ -1,0 +1,9 @@
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.works__list_active {
+    color:#C0301C; 
+}
